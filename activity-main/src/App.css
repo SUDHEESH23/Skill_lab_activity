@@ -1,0 +1,112 @@
+
+.navbar {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding-inline: 30px;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.carousel img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.accordion {
+  text-align: center;
+  margin: 1rem;
+}
+
+.accordion button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.accordion-content {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+
+.custom-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+
+.card {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 300px;
+  margin: 1rem;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .carousel {
+    height: 200px;
+  }
+  .accordion button {
+    font-size: 0.9rem;
+  }
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 80%;
+  }
+}
+
+
